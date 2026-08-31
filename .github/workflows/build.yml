@@ -20,8 +20,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build project with Capacitor
+    - name: Add Android platform and sync
       run: |
-        npx cap init --force
         npx cap add android
         npx cap sync
